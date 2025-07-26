@@ -1,11 +1,30 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Documen</title>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Love</title>
+  <link rel="stylesheet" href="style.css" />
 </head>
 <body>
-    
+  <div class="login-container">
+    <h2>Login</h2>
+    <form id="loginForm">
+      <label for="userId">User ID</label>
+      <input type="text" id="userId" required />
+
+      <label for="password">Password</label>
+      <input type="password" id="password" required />
+
+      <button type="submit">Submit</button>
+      <p class="error-message" id="errorMsg"></p>
+    </form>
+  </div>
+
+  <div class="love-message" id="loveMessage" style="display:none;">
+    ❤️ I Love You ❤️
+  </div>
+
+  <script src="script.js"></script>
 </body>
 </html>
